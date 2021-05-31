@@ -1,12 +1,8 @@
-print(__doc__)
-
-# Author: Peter Prettenhoer <peter.prettenhofer@gmail.com>
-#
-# License: BSD 3 clause
-
 import matplotlib
-matplotlib.use('TkAgg')
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
+# 交互例子
+
+matplotlib.use('TkAgg')
 try:
     from matplotlib.backends.backend_tkagg import NavigationToolbar2Tk
 except ImportError:
@@ -128,8 +124,8 @@ class View:
     def __init__(self, root, controller):
         f = Figure()
         ax = f.add_subplot(111)
-        ax.set_xticks([])
-        ax.set_yticks([])
+        # ax.set_xticks([])
+        # ax.set_yticks([])
         ax.set_xlim((x_min, x_max))
         ax.set_ylim((y_min, y_max))
         canvas = FigureCanvasTkAgg(f, master=root)
@@ -320,3 +316,4 @@ def main(argv):
 
 if __name__ == "__main__":
     main(sys.argv)
+

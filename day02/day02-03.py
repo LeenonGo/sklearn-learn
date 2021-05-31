@@ -2,7 +2,11 @@ import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 from sklearn import datasets
 from sklearn.decomposition import PCA
+"""
+练习
 
+根据特征1和特征2，尝试用 SVMs 把1和2类从鸢尾属植物数据集中分出来。为每一个类留下10%，并测试这些观察值预期效果。
+"""
 # import some data to play with
 iris = datasets.load_iris()
 X = iris.data[:, :2]  # we only take the first two features.
@@ -41,3 +45,5 @@ ax.set_zlabel("3rd eigenvector")
 ax.w_zaxis.set_ticklabels([])
 
 plt.show()
+
+
