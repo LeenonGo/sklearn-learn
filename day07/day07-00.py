@@ -6,5 +6,5 @@
 # 地址：https://www.scikitlearn.com.cn/0.21.3/2/
 #
 # 1.1 广义线性矩阵
-# 
+#   线性回归、岭回归、Lasso回归、多任务Lasso
 
